@@ -22,6 +22,11 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Dijkstra\WebstormProjects\CarAcc\server" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -31,7 +36,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603909824385</updated>
       <workItem from="1603909825401" duration="282000" />
-      <workItem from="1603910118408" duration="4178000" />
+      <workItem from="1603910118408" duration="4445000" />
     </task>
     <servers />
   </component>
