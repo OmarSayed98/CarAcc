@@ -15,6 +15,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="GitIgnore" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.15.0" />
     <property name="javascript.nodejs.core.library.typings.version" value="14.14.5" />
     <property name="nodejs_interpreter_path" value="node" />
@@ -30,7 +31,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603909824385</updated>
       <workItem from="1603909825401" duration="282000" />
-      <workItem from="1603910118408" duration="1899000" />
+      <workItem from="1603910118408" duration="2736000" />
     </task>
     <servers />
   </component>
