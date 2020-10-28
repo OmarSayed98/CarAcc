@@ -12,15 +12,7 @@ class App extends Component {
     
     console.log(data);
     this.setState({response:data})
-   }
-
-   async componentDidUpdate(){
-
-    const {data} = await axios.get("http://localhost:3001/test");
-    
-    this.setState({response:data});
-   }
-   
+   }   
 
   render() { 
   return ( <h1>{this.state.response}</h1> );
