@@ -1,0 +1,23 @@
+.container-fluid {
+  width: 30%;
+}
+
+form {
+  margin-top: 20vh;
+}
+
+.btn:focus,
+.btn:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.formErrors {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  background-color: rgba(256, 0, 0, 0.3);
+  border-radius: 5px;
+  color: darkred;
+  border: 1px solid red;
+}

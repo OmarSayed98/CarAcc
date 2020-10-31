@@ -1,36 +1,22 @@
 import React, { Component } from 'react';
 import { Route, Switch, Redirect } from 'react-router-dom';
-import axios from 'axios';
+
+import 'bootstrap/dist/css/bootstrap.css';
+
 import SignUp from './components/SignUp';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
+import SignIn from './components/SignIn';
 
 class App extends Component {
-
-async Test(){
-
-  try{
-    const {data} = await axios.get("/test");
-    console.log(data);
-  }
-  catch(error){
-    console.log(error);
-  }
-  
-
-}
 
   render() { 
   return ( 
    <React.Fragment>
       <Switch>
-      <Route exact path="/home" component={(props)=>(
-        <Home
-        {...props}
-        Test={this.Test}
-        />
-      )}/>
+      <Route exact path="/home" component={Home}/>
       <Route exact path="/signup" component={SignUp}/>
+      <Route exact path="/signin" component={SignIn}/>
       <Redirect exact from="/" to="/home" />
       <Route exact path="/notfound" component={NotFound}/>
       <Redirect to="/notfound"/>

@@ -1,11 +1,11 @@
 var express = require("express");
 var router = express.Router();
 
-router.get("/",function(req,res,next){
+router.post("/",function(req,res,next){
 
-    if(req.headers.referer==='http://localhost:3000/home')
+    if(req.headers.referer==='http://localhost:3000/signup')
     {
-        res.send("test passed");
+        res.send("user sent");
         
     }
 
