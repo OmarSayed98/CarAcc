@@ -38,11 +38,11 @@ class SignUp extends Component {
 
     let errors = this.handleValidation();
     if (!errors) {
-      let newUser = { ...this.state };
-      delete newUser.errors;
-      delete newUser.passwordConfirmation;
+      let user = { ...this.state };
+      delete user.errors;
+      delete user.passwordConfirmation;
       try {
-        await axios.post("/register", { newUser });
+        await axios.post("/signup", { user });
         this.props.history.replace("/signin");
       } catch (err) {
         console.log(err);
