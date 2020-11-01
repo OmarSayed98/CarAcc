@@ -1,21 +1,28 @@
 import React, { Component } from 'react';
-import axios from 'axios'
+import { Route, Switch, Redirect } from 'react-router-dom';
+
+import 'bootstrap/dist/css/bootstrap.css';
+
+import SignUp from './components/SignUp';
+import Home from './components/Home';
+import NotFound from './components/NotFound';
+import SignIn from './components/SignIn';
 
 class App extends Component {
-  state = { 
-    response:"",
-   }
-
-  async componentDidMount(){
-
-    const {data} = await axios.get("http://localhost:3001/test");
-    
-    console.log(data);
-    this.setState({response:data})
-   }   
 
   render() { 
-  return ( <h1>{this.state.response}</h1> );
+  return ( 
+   <React.Fragment>
+      <Switch>
+      <Route exact path="/home" component={Home}/>
+      <Route exact path="/signup" component={SignUp}/>
+      <Route exact path="/signin" component={SignIn}/>
+      <Redirect exact from="/" to="/home" />
+      <Route exact path="/notfound" component={NotFound}/>
+      <Redirect to="/notfound"/>
+    </Switch>
+   </React.Fragment>
+  );
   }
 }
  
